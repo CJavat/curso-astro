@@ -1,0 +1,24 @@
+---
+import Layout from "@layouts/Layout.astro";
+
+import Titulo from "@components/Titulo.astro";
+import Card from "@components/Card.astro";
+import Json from "@components/Json.astro";
+---
+
+<Layout title="Bienvenido a Astro.">
+	<Titulo />
+	<Card nombre="Luis" avatar={true} />
+	<Card nombre="Sandra" ocupacion="Ing. Diseño" avatar={false}>
+		<p slot="desc">
+			Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita
+			omnis totam incidunt sit, ex laboriosam odit architecto maiores
+			voluptas nobis neque eligendi saepe sunt, vitae tempora. Fuga dolore
+			corrupti quae.
+		</p>
+	</Card>
+	<Json />	
+
+
+	
+</Layout>
